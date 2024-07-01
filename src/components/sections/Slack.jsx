@@ -30,7 +30,7 @@ export const Slack = () => {
     <Section
       title={
         <span>
-          Como comenzar en <br /> Slack?
+          Como comenzar en <br /> Discord?
         </span>
       }
       description="Aprende cómo ser activo en nuestra comunidad"
