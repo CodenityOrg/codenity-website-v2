@@ -38,9 +38,20 @@ export function PreHome({ fecha, dataFrase }) {
           YT="true"
           X="true"
         />
-         <div className="w-4/5 mt-8 flex flex-col items-center gap-4 justify-center md:w-3/5">
-          <p className="text-2xl text-white text-center">{dataFrase.quote}</p>
-          <p className="text-2xl text-white">- {dataFrase.author}</p>
+        <div className="w-4/5 mt-8 flex flex-col items-center gap-4 justify-center md:w-3/5">
+          {/* <p className="text-2xl text-white text-center">{dataFrase.quote}</p> */}
+          {/* <p className="text-2xl text-white">- {dataFrase.author}</p> */}
+
+          {dataFrase ? (
+            <div className="w-4/5 mt-8 flex flex-col items-center gap-4 justify-center md:w-3/5">
+              <p className="text-2xl text-white text-center">
+                {dataFrase.quote}
+              </p>
+              <p className="text-2xl text-white">- {dataFrase.author}</p>
+            </div>
+          ) : (
+            <p>Cargando...</p>
+          )}
         </div>
       </div>
     </div>

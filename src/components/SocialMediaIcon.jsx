@@ -1,9 +1,9 @@
-import { FacebookIcon } from "../icons/svg/FacebookIcon";
-import { InstagramIcon, InstagramIcon2 } from "../icons/svg/InstagramIcon.jsx";
-import { LinkedinIcon } from "../icons/svg/LinkedinIcon.jsx";
-import { GithubIcon } from "../icons/svg/GithubIcon.jsx";
-import { YoutubeIcon, YoutubeIconCircle } from "../icons/svg/YoutubeIcon.jsx";
-import { XIcon } from "../icons/svg/XIcon.jsx";
+import { FacebookIcon } from "./IconsRRSS.jsx";
+import { InstagramIcon, InstagramIcon2 } from "./IconsRRSS.jsx";
+import { LinkedinIcon } from "./IconsRRSS.jsx";
+import { GithubIcon } from "./IconsRRSS.jsx";
+import { YoutubeIcon, YoutubeIconCircle } from "./IconsRRSS.jsx";
+import { XIcon } from "./IconsRRSS.jsx";
 
 function socialmedia(label, href, icon, visibilidad) {
   const iconStyle =

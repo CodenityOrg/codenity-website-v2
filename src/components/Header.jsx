@@ -1,14 +1,25 @@
+import { LogoCodenityText } from "./LogoCodenity";
+
 const Nav = () => {
   return (
     <nav className="bg-[#868686] md:bg-transparent p-0 border-0 rounded-none">
       <div className="px-5 flex">
-        <a className="navbar-brand logo_h" href="#">
+        {/* <a className="navbar-brand logo_h" href="#">
           <img
             style={{ padding: 15 }}
             width="200"
             src="/images/logo.png"
             alt=""
           />
+        </a> */}
+        <a
+          target="_self"
+          rel="noopener"
+          aria-label="Logo de Codenity Text"
+          href="/"
+          className="navbar-brand logo_h"
+        >
+          {<LogoCodenityText width={200} height={80} fill="white" />}
         </a>
         <button
           className="hidden"
@@ -64,7 +75,7 @@ const Nav = () => {
 };
 export const Header = () => {
   return (
-    <header className="absolute w-full">
+    <header className="absolute z-10 w-full">
       <div className="main_menu">
         <Nav />
       </div>
