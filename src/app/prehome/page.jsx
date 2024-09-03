@@ -10,7 +10,7 @@ async function PreHomePage() {
   // console.log(data);
   return (
     <>
-      <PreHome fecha={"09/28/2024 23:59"} dataFrase={data} />
+      <PreHome fecha={"09/05/2024 23:59"} dataFrase={data} />
     </>
   );
 }
