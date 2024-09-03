@@ -55,15 +55,16 @@ export const HomeBanner = () => {
             {/* Card - 30% de ancho */}
             <div className="w-full md:w-5/10 flex justify-center items-center">
               <div className="bg-[#001528] shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+              
+                {/* Título del card */}
+                <h3 className="text-xl text-gray-100 font-bold mb-4">Siguiente evento</h3>
+
                 {/* Imagen circular */}
                 <img
                   src={nextEvent.speaker.photoUrl}
                   alt="Foto del speaker"
                   className="w-24 h-24 rounded-full mb-4"
                 />
-                
-                {/* Título del card */}
-                <h3 className="text-xl text-gray-100 font-bold mb-4">Siguiente evento</h3>
                 
                 {/* Nombre del speaker */}
                 <p className="font-bold text-yellow-200 mb-2">
