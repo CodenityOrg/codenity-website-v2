@@ -14,7 +14,6 @@ const nextEvent = {
   liveStreaming: {
     url: 'https://www.youtube.com/@codenity9515',
     platform: 'YouTube',
-    logo: 'asdads'
   }
 };
 
