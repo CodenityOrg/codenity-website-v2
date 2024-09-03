@@ -65,12 +65,7 @@ export const HomeBanner = () => {
                 <p className="font-bold text-yellow-200 mb-2">
                   {nextEvent.speaker.name}
                 </p>
-                
-                <img
-                  src={nextEvent.speaker.photoUrl}
-                  alt="Foto del speaker"
-                  className="w-24 h-24 rounded-full mb-4"
-                />
+
                 <p className="text-gray-100 mb-4">
                   {nextEvent.speaker.position}
                 </p>
