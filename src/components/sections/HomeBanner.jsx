@@ -25,7 +25,6 @@ export const HomeBanner = () => {
       <div className="relative z-1 p-10 md:pt-40 md:pl-40 md:pr-40 flex justify-between">
         <Container>
           <div className="flex">
-            {/* Contenido existente - 70% de ancho */}
             <div className="w-full md:w-5/10">
               <div className="text-center">
                 <h2
@@ -52,50 +51,46 @@ export const HomeBanner = () => {
               </div>
             </div>
 
-            {/* Card - 30% de ancho */}
             <div className="w-full md:w-5/10 flex justify-center items-center">
               <div className="bg-[#001528] shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
               
-                {/* Título del card */}
                 <h3 className="text-xl text-gray-100 font-bold mb-4">Siguiente evento</h3>
 
-                {/* Imagen circular */}
                 <img
                   src={nextEvent.speaker.photoUrl}
                   alt="Foto del speaker"
                   className="w-24 h-24 rounded-full mb-4"
                 />
                 
-                {/* Nombre del speaker */}
                 <p className="font-bold text-yellow-200 mb-2">
                   {nextEvent.speaker.name}
                 </p>
                 
-                {/* Posición del speaker */}
+                <img
+                  src={nextEvent.speaker.photoUrl}
+                  alt="Foto del speaker"
+                  className="w-24 h-24 rounded-full mb-4"
+                />
                 <p className="text-gray-100 mb-4">
                   {nextEvent.speaker.position}
                 </p>
                 
-                {/* Tipo de evento */}
                 <div className="border-2 border-dashed border-yellow-400 rounded-full px-4 py-2 mb-4">
                   <p className="text-yellow-300">
                     {nextEvent.type}
                   </p>
                 </div>
-                
-                {/* Título del evento */}
+
                 <p className="text-gray-100 mb-4 font-bold">
                   {nextEvent.title}
                 </p>
-                
-                {/* Fecha y hora del evento */}
+
                 <div className="bg-yellow-400 rounded-xl px-4 py-2 mb-4">
                   <p className="text-blue-950 mb-2 font-bold">
                     {nextEvent.date} - {nextEvent.hour}
                   </p>
                 </div>
-                
-                {/* Botón para ver en la plataforma */}
+
                 <a
                   href={nextEvent.liveStreaming.url}
                   target="_blank"
