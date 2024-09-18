@@ -29,25 +29,27 @@ export const Features = () => {
   ];
 
   return (
-    <Section title="Que te ofrecemos?">
+    <Section title="¿Que te ofrecemos?" backgroundColor="#002333">
       <Container>
-        <div className="flex flex-col md:flex-row gap-4">
-          {features.map((feature, idx) => (
-            <div key={idx} className="mx-3">
-              <div className="px-5 py-10 bg-[#f9f9ff]">
-                <div className="icon">
-                  <span className={feature.icon}></span>
-                </div>
-                <div className="desc">
-                  <h4 className="text-xl md:text-2xl font-bold mt-3 mb-2">
-                    {feature.title}
-                  </h4>
-                  <p className="text-[#7b838a]">{feature.description}</p>
-                </div>
+      <div className="flex flex-col md:flex-row gap-4">
+        {features.map((feature, idx) => (
+          <div key={idx} className="mx-3 flex-grow ">
+            <div className="px-5 pb-2 bg-[#002333] border-4 border-[#20a5eb] rounded-lg min-h-[300px] min-w-[350px]">
+              <div className="icon absolute -mt-10 py-2 px-5 bg-[#002333]">
+                <span className={`${feature.icon}`}></span>
+              </div>
+              <div className="desc mt-10">
+                <h5 className="text-md md:text-2xl font-bold mt-3 mb-2 text-center">
+                  {feature.title}
+                  
+                </h5>
+                <p className="text-[#7b838a] text-sm">{feature.description}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
       </Container>
     </Section>
   );
