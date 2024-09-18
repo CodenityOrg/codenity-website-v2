@@ -3,17 +3,17 @@ import { sriracha, titillium_web } from "@/app/ui/fonts";
 
 const nextEvent = {
   speaker: {
-    name: "Jorge Pacora",
-    position: "Hacker por curiosidad",
+    name: "Lisbeths Desingrid Calderon Garrido",
+    position: "Senior Digital Risk Consultant",
     photoUrl:
-      "https://scontent.ftcq1-1.fna.fbcdn.net/v/t1.6435-9/96144700_10219806945138773_4619976976050946048_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeHaKODEWf9DNkfJAys8KE68SFr7DFLuiDdIWvsMUu6INyRiL9FXgVUUnAZew9A78ycU8-DF8Ll36zS2Rg7qttBx&_nc_ohc=RgG-amx_VYMQ7kNvgEDv594&_nc_ht=scontent.ftcq1-1.fna&oh=00_AYBcuV4x7ECxFCkorBFIrAcJEGz_xlaa41tJe9Pa9j3OqQ&oe=66FEF175",
+      "https://ciistacna.com/speakers/f287f87f-55c0-4b11-98ca-8241a0957d46.jpg",
   },
-  title: "Cómo comenzar en hacking?",
-  date: "15 de Agosto",
+  title: "Auditoría de seguridad de accesos",
+  date: "03 de Octubre",
   hour: "17:00 (GMT -5)",
   type: "Codenity Meetup",
   liveStreaming: {
-    url: "https://www.youtube.com/@codenity9515",
+    url: "https://www.youtube.com/live/OCwq2b81TLg",
     platform: "YouTube",
   },
 };
@@ -46,11 +46,13 @@ export const HomeBanner = () => {
               <h3 className="text-center text-sm font-bold text-gray-300 mb-2">
                 PRÓXIMO EVENTO
               </h3>
-              <img
-                src={nextEvent.speaker.photoUrl}
-                alt="Meetup Event"
-                className="w-full h-80 object-cover rounded mb-4"
-              />
+              <div className="mb-4">
+                <img
+                  src={nextEvent.speaker.photoUrl}
+                  alt="Meetup Event"
+                  className="w-[280px] h-[360px] overflow-hidden block mx-auto object-cover rounded-lg"
+                />
+              </div>
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="w-full md:w-1/2"> 
                   <div className="px-2">
@@ -80,8 +82,6 @@ export const HomeBanner = () => {
 
                 </div>
               </div>
-              
-              
             </div>
           </div>
         </div>
